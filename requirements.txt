@@ -1,0 +1,15 @@
+pandas
+scikit-learn
+matplotlib
+seaborn
+nbformat
+jupyter
+pypdf
+requests
+tweepy
+duckdb
+pyarrow
+datasets
+huggingface_hub
+transformers
+torch
