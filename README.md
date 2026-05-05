@@ -9,7 +9,6 @@ This repo contains a Jupyter notebook implementation of determining whether aggr
 - `scripts/prepare_election_dataset.py`: filter a public election-post dataset into `tweets_data.csv`
 - `data/raw/`: place input CSV files here
 - `data/processed/`: notebook outputs are saved here
-- `outputs/figures/`: optional figure exports
 
 ## Quick Start
 
@@ -24,11 +23,8 @@ This repo contains a Jupyter notebook implementation of determining whether aggr
 
 ## Default Data Source
 
-The repo is now set up around `Kalshi + local tweet CSV`.
-
 - Use Kalshi's official public API for prediction-market candles.
 - Put tweet or post data into `data/raw/tweets_data.csv`.
-- If you later get X API access, export your post search results into the same CSV shape.
 
 Official Kalshi docs used here:
 
@@ -38,8 +34,6 @@ Official Kalshi docs used here:
 - Historical candles: https://docs.kalshi.com/api-reference/historical/get-historical-market-candlesticks
 
 ## Pull Kalshi Data
-
-The project is configured for an hourly workflow by default:
 
 - Kalshi candles: `--period-interval 60`
 - Notebook aggregation: `AGG_FREQ = "1H"`
